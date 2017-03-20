@@ -88,7 +88,7 @@ def action(batch):
     for depart_city_num in range(0,4):
         for arrive_city_num in range(depart_city_num+1,4):
             count = 0
-            while count<=5:
+            while count<=40:
                 url = get_url(citylist[arrive_city_num], citylist[depart_city_num], Year='2017', Month=monthlist[month_num], Day=daylist[day_num],DayCount=str(count))
                 print(citylist[arrive_city_num])
                 print(arrive_city_num)
@@ -117,7 +117,7 @@ def run():
     while batch!=0:
         sql.create_table()
         action(str(batch))
-        dc.sort_by_airline(str('s'+str(time.strftime('%Y%m%d%H%M%S'))), batch)
+        dc.sort_by_airline(str('s'+str(time.strftime('%Y%m%d%'))), batch)
         batch = batch + 1
         time.sleep(10800)
         
