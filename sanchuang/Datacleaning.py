@@ -31,3 +31,4 @@ def sort_by_airline(name,batch):
     cursor.close()
     connect.close()
 
+# sort_by_airline('s20170320', '2')

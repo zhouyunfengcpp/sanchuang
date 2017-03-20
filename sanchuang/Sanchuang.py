@@ -117,7 +117,7 @@ def run():
     while batch!=0:
         sql.create_table()
         action(str(batch))
-        dc.sort_by_airline(str('s'+str(time.strftime('%Y%m%d%'))), batch)
+        dc.sort_by_airline(str('s'+str(time.strftime('%Y%m%d'))), batch)
         batch = batch + 1
         time.sleep(10800)
         
