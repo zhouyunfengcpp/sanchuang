@@ -99,7 +99,11 @@ def action(batch,scrappertime,scrapper_table_name):
                     data=get_data(url)
                     if data!=False and data!=True: 
                         for each in data:
+<<<<<<< HEAD
                             id = each[6]+'-'+str(day.strftime('%Y%m%d%H'))+'-'+str(batch)+'-'+str(count)
+=======
+                            id = each[6]+'-'+str(day.strftime)+'-'+str(batch)+'-'+str(count)
+>>>>>>> origin/master
                             sql.insert_data(scrapper_table_name,each[0], each[1], each[2], each[3], each[4], each[5], each[6], each[7], batch,str(id))
                 elif data==False:
                     pass
