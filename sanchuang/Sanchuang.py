@@ -8,8 +8,8 @@ import csv
 import datetime
 import threading
 import os
-import sanchuang.MySQLchange as sql
-import sanchuang.Datacleaning as dc
+import MySQLchange as sql
+import Datacleaning as dc
 
 
 #by http proyocol,get json data
